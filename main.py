@@ -47,9 +47,7 @@ class SHMATHTTPRequestHandler(BaseHTTPRequestHandler):
 def run():
     try:
         print('http server is starting...')
-        # ip and port of servr
-        # by default http server port is 80
-        server_address = ('127.0.0.1', 8005)
+        server_address = ('0.0.0.0', 8000)
         httpd = HTTPServer(server_address, SHMATHTTPRequestHandler)
         print('http server is running...')
         httpd.serve_forever()
