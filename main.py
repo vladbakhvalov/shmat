@@ -11,7 +11,7 @@ class SHMATHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_header("Connection", "Keep-Alive")
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("X-Content-Type-Options", "nosniff")
-        self.send_header("Transfer-Encoding", "chunked")
+        #self.send_header("Transfer-Encoding", "chunked")
         self.send_header("Content-Type", "audio/wave")
         self.end_headers()
 
